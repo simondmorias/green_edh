@@ -1,5 +1,8 @@
 # Entity Data Hub - Agent Guidelines
 
+## Repo Layout
+- Follow the repository file/folder layout described here: ./docs/components/edh/repo_layout.md
+
 ## Build/Test Commands
 - Install: `pnpm install`
 - Dev: `pnpm dev:web` (Next.js), `pnpm dev:worker` (BullMQ worker)
@@ -19,3 +22,6 @@
 - Prisma models in packages/db, Zod schemas in packages/contracts for validation
 - BullMQ jobs in services/worker with proper error handling and retries
 - Use pnpm workspaces for monorepo dependencies
+
+## Documentation
+- All documents related to the repo are in ./docs/components/edh/ - the other folders in ./docs are READ ONLY
